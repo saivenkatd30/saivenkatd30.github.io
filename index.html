@@ -1,187 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>D. Sai Venkat - Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D SAI VENKAT - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
-            padding: 0;
             background-color: #f4f4f4;
-            color: #333;
+            color: black;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            width: 100%;
+            padding: 40px 5%;
+            box-sizing: border-box;
             background: #fff;
-            padding: 20px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-top: 25px;
-            margin-bottom: 25px;
+            margin: auto;
         }
         .header {
-            background-color: #d9534f; /* Red header */
-            color: white;
-            padding: 20px;
-            text-align: center;
             margin-bottom: 20px;
+            padding: 20px;
+            background-color: #e0f2f7;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Changed to center for equal vertical spacing */
+            flex-wrap: wrap;
         }
         .header h1 {
             margin: 0;
-            font-size: 2.5em;
+            color: black;
+            flex-grow: 1;
+            text-align: left;
+            padding-right: 10px;
         }
         .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-            font-size: 1.1em;
+            text-align: right;
+            margin-bottom: 0;
+            flex-shrink: 0;
         }
         .contact-info p {
             margin: 5px 0;
         }
-        h2 {
-            color: #d9534f; /* Red headings */
-            border-bottom: 2px solid #d9534f;
+        .section {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+        .section:last-child {
+            border-bottom: none;
+        }
+        .section h2 {
+            color: black;
+            border-bottom: 2px solid black;
             padding-bottom: 5px;
-            margin-top: 20px;
+            margin-bottom: 15px;
         }
-        .section-content ul {
-            list-style: none;
-            padding: 0;
+        .section ul {
+            list-style: disc;
+            padding-left: 20px;
         }
-        .section-content ul li {
-            margin-bottom: 5px;
+        .section ul li {
+            margin-bottom: 8px;
         }
-        .education table {
+        .section p {
+            margin-bottom: 10px;
+        }
+        table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 10px;
         }
-        .education table th, .education table td {
+        table, th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+        }
+        th, td {
+            padding: 10px;
             text-align: left;
         }
-        .education table th {
+        th {
             background-color: #f2f2f2;
+        }
+        .skillset-categories {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+        }
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+            max-width: 30%;
+        }
+        .skill-category h3 {
+            margin-top: 0;
+            color: black;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>D. Sai Venkat</h1>
-        </div>
-        <div class="contact-info">
-            <p>+919493189033 | sai549718@gmail.com | Vijayawada</p>
+            <h1>D SAI VENKAT</h1>
+            <div class="contact-info">
+                <p>📞 +919493189033</p>
+                <p>📧 sai549718@gmail.com</p>
+                <p>🏠 Vijayawada</p>
+            </div>
         </div>
 
-        <h2>CAREER OBJECTIVE</h2>
-        <div class="section-content">
+        <div class="section">
+            <h2>CAREER OBJECTIVE</h2>
             <p>Seeking a dynamic role to apply my skills and dedication, contributing to company growth while continuously enhancing my professional and personal development.</p>
         </div>
 
-        <h2>EDUCATION</h2>
-        <div class="section-content education">
+        <div class="section">
+            <h2>EDUCATION</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Degree/Board</th>
+                        <th>Year</th>
                         <th>Institution</th>
-                        <th>Years</th>
-                        <th>CGPA/Percentage</th>
+                        <th>Course/Board</th>
+                        <th>Score</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>B.Tech In Electronics and Communication Engineering</td>
-                        <td>PRASAD V. POTLURI SIDDHARTHA INSTITUTE OF TECHNOLOGY</td>
                         <td>2022-2026</td>
+                        <td>PRASAD V. POTLURI SIDDHARTHA INSTITUTE OF TECHNOLOGY</td>
+                        <td>B.Tech In Electronics and Communication Engineering</td>
                         <td>CGPA: 7.4</td>
                     </tr>
                     <tr>
-                        <td>Board of Intermediate Education</td>
-                        <td>SRI SARADA JUNIOUR COLLEGE</td>
                         <td>2020-2022</td>
-                        <td>Percentage: 75%</td>
+                        <td>SRI SARADA JUNIOR COLLEGE</td>
+                        <td>Board of Intermediate Education</td>
+                        <td>Percentage: 65%</td>
                     </tr>
                     <tr>
-                        <td>Board of Secondary Education</td>
+                        <td>2019-2020</td>
                         <td>RAVINDRA BHARATHI PUBLIC SCHOOL</td>
-                        <td>2022-2026</td>
+                        <td>Board of Secondary Education</td>
                         <td>Percentage: 99%</td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
-        <h2>SKILLSET</h2>
-        <div class="section-content">
-            <h3>PROGRAMMING LANGUAGES</h3>
-            <ul>
-                <li>C</li>
-                <li>Java</li>
-                <li>Matlab</li>
-                <li>Vivado</li>
-            </ul>
-            <h3>CORE SUBJECTS</h3>
-            <ul>
-                <li>Signals And Systems</li>
-                <li>Digital communication</li>
-                <li>VLSI</li>
-                <li>Digital Logic Design</li>
-            </ul>
-            <h3>SOFTWARE TOOLS</h3>
-            <ul>
-                <li>Matlab</li>
-                <li>Vivado</li>
-                <li>CCS</li>
-                <li>NI-Multisim</li>
-            </ul>
+        <div class="section">
+            <h2>SKILLSET</h2>
+            <div class="skillset-categories">
+                <div class="skill-category">
+                    <h3>Programming languages</h3>
+                    <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Core subjects</h3>
+                    <ul>
+                        <li>Signals And Systems</li>
+                        <li>Digital communication</li>
+                        <li>VLSI</li>
+                        <li>Digital Logic Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Software tools</h3>
+                    <ul>
+                        <li>Matlab</li>
+                        <li>Vivado</li>
+                        <li>CCS</li>
+                        <li>NI-Multisim</li>
+                    </ul>
+                </div>
+            </div>
         </div>
 
-        <h2>PROJECTS</h2>
-        <div class="section-content">
+        <div class="section">
+            <h2>PROJECTS</h2>
             <h3>Community Service Project</h3>
             <ul>
-                <li>As part of our community service project in Yanamalakudhuru, we conducted a comprehensive survey to assess residents' health concerns, including prevalent illnesses, access to medical services, and sanitation conditions.</li>
-                <li>In addition to health-related challenges, our assessment identified critical community issues such as inadequate water supply, gaps in educational resources, and limited employment opportunities.</li>
-                <li>This analysis provided valuable insights to explore and develop potential solutions for sustainable community development.</li>
+                <li>During our community service project at Yanamalakudhuru, we surveyed residents to identify health issues, including illnesses, medical access, and sanitation conditions.</li>
+                <li>Besides health concerns, we identified education needs and employment opportunities to explore possible solutions.</li>
             </ul>
             <h3>Fire detection alarm</h3>
             <ul>
-                <li>The project involves using smoke and heat sensors to detect the presence of fire or smoke, with the data being processed by a microcontroller to identify potential hazards.</li>
-                <li>When fire conditions are detected, the system triggers an alarm (sound or visual) to alert occupants, ensuring timely evacuation and safety.</li>
+                <li>The project uses smoke and heat sensors to detect fire or smoke.</li>
+                <li>The data is processed by a microcontroller to identify potential hazards.</li>
+                <li>If a threat is detected, an alarm is triggered to alert occupants for evacuation.</li>
             </ul>
         </div>
 
-        <h2>INTERNSHIP</h2>
-        <div class="section-content">
+        <div class="section">
+            <h2>INTERNSHIP</h2>
             <h3>Thermal Power generation</h3>
             <ul>
-                <li>Gained hands-on experience in thermal power plant operations and maintenance, acquiring practical knowledge of industry-standard practices.</li>
-                <li>Studied boiler operations, turbine functionality, and coal handling processes to understand critical power generation systems.</li>
-                <li>Conducted in-depth analysis of energy production cycles and explored efficiency enhancement techniques to optimize performance and sustainability.</li>
-                <li>Observed safety protocols, environmental regulations, and best practices to ensure compliance and operational reliability.</li>
+                <li>Gained Hands on Expirence in thermal power plant operations and mainteance.</li>
+                <li>Studied about boiler operations, turbine functioning and coal handling processes.</li>
+                <li>Analyzed energy production cycles and efficiency improvement techniques.</li>
             </ul>
         </div>
 
-        <h2>CERTIFICATIONS</h2>
-        <div class="section-content">
+        <div class="section">
+            <h2>CERTIFICATIONS</h2>
             <ul>
-                <li>Programming using Java, Infosys Spring Board, January 2025</li>
-                <li>Basics of Python, Infosys Spring Board, February 2024.</li>
-                <li>Internet of Things Foundation, Infosys Spring Board, August 2024</li>
-                <li>Python 3.4.3, Spoken Tutorial Project, August 2024.</li>
-                <li>Arduino, Spoken Tutorial Project, October 2024.</li>
+                <li>Java Foundation Certification, Infosys Spring Board</li>
+                <li>Arduino, Spoken Tutorial Project.</li>
+                <li>Internet of Things Foundation, Infosys Spring Board</li>
                 <li>PCB Design, APSSDC</li>
             </ul>
         </div>
 
-        <h2>EXTRACURRICULAR ACTIVITIES</h2>
-        <div class="section-content">
+        <div class="section">
+            <h2>EXTRACURRICULAR ACTIVITIES</h2>
             <ul>
-                <li>Coordinated IEEE Paper presentation</li>
+                <li>Coordinated IEEE</li>
+                <li>Paper presentation</li>
                 <li>Coordinated seminar about antiragging</li>
             </ul>
         </div>
